@@ -1,11 +1,11 @@
 package segmenttree
 
-type CHSeg []struct {
+type ArrSeg []struct {
 	op        operation
 	l, r, val int
 }
 
-func (t CHSeg) Build(treeIdx, l, r int, nums []int, op operation) {
+func (t ArrSeg) Build(treeIdx, l, r int, nums []int, op operation) {
 	t[treeIdx].op = op
 
 	t[treeIdx].l, t[treeIdx].r = l, r
@@ -21,7 +21,7 @@ func (t CHSeg) Build(treeIdx, l, r int, nums []int, op operation) {
 	t[treeIdx].val = t[treeIdx].op(t[treeIdx<<1+1].val, t[treeIdx<<1+2].val)
 }
 
-func (t CHSeg) Update(treeIdx, idx, val int) {
+func (t ArrSeg) Update(treeIdx, idx, val int) {
 	if t[treeIdx].l == t[treeIdx].r {
 		t[treeIdx].val = val
 		return
@@ -35,7 +35,7 @@ func (t CHSeg) Update(treeIdx, idx, val int) {
 	t[treeIdx].val = t[treeIdx].op(t[treeIdx<<1+1].val, t[treeIdx<<1+2].val)
 }
 
-func (t CHSeg) Query(treeIdx, l, r int) int {
+func (t ArrSeg) Query(treeIdx, l, r int) int {
 	if l <= t[treeIdx].l && t[treeIdx].r <= r {
 		return t[treeIdx].val
 	}
@@ -53,7 +53,7 @@ func (t CHSeg) Query(treeIdx, l, r int) int {
 	)
 }
 
-func (t CHSeg) Get(treeIdx, r int) int {
+func (t ArrSeg) Get(treeIdx, r int) int {
 	// if t[treeIdx].l == t[treeIdx].r {
 	// 	return t[treeIdx].l
 	// }
@@ -64,8 +64,8 @@ func (t CHSeg) Get(treeIdx, r int) int {
 	return 0
 }
 
-func NewCHSeg(nums []int) CHSeg {
-	t := make(CHSeg, len(nums)*4)
-	t.Build(0, 0, len(nums)-1, nums, sum)
+func NewCHSeg(nums []int, op operation) ArrSeg {
+	t := make(ArrSeg, len(nums)*4)
+	t.Build(0, 0, len(nums)-1, nums, op)
 	return t
 }

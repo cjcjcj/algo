@@ -39,13 +39,12 @@ func (st *STR) query(treeIdx, segL, segR, l, r int) int {
 
 	mid := (segL + segR) >> 1
 	if l > mid {
-		// partial overlap {segL...[l...mid...segR}...r]
-		// partial overlap [l....{segL...mid...r]...segR}
-		// partial overlap {segL...[l....mid...r]...segR}
+		// partial overlap {segL...mid...[l...segR}...r]
+		// partial overlap {segL...mid...[l...r]...segR}
 		return st.query(treeIdx<<1+2, mid+1, segR, l, r)
 	} else if r <= mid {
-		// partial overlap [l...{segL...r]...mid]...segR}
-		// partial overlap {segL...[l...r]...mid]...segR}
+		// partial overlap {segL...[l...r]...mid...segR}
+		// partial overlap [l...{segL...r]...mid...segR}
 		return st.query(treeIdx<<1+1, segL, mid, l, r)
 	}
 

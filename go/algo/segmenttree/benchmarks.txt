@@ -1,0 +1,335 @@
+goarch: amd64
+pkg: github.com/cjcjcj/algo/go/algo/segmenttree
+cpu: VirtualApple @ 2.50GHz
+BenchmarkChineseBuild
+BenchmarkChineseBuild/2
+BenchmarkChineseBuild/2-8       18227671                69.74 ns/op          256 B/op          1 allocs/op
+BenchmarkChineseBuild/17
+BenchmarkChineseBuild/17-8       2972175               391.6 ns/op          2304 B/op          1 allocs/op
+BenchmarkChineseBuild/15
+BenchmarkChineseBuild/15-8       3137431               370.6 ns/op          2048 B/op          1 allocs/op
+BenchmarkChineseBuild/10
+BenchmarkChineseBuild/10-8       4658370               249.2 ns/op          1280 B/op          1 allocs/op
+BenchmarkChineseBuild/1000
+BenchmarkChineseBuild/1000-8       61800             19198 ns/op          131072 B/op          1 allocs/op
+BenchmarkChineseBuild/10000
+BenchmarkChineseBuild/10000-8               3628            295779 ns/op         1286148 B/op          1 allocs/op
+BenchmarkChineseBuild/100000
+BenchmarkChineseBuild/100000-8               404           2752221 ns/op        12804099 B/op          1 allocs/op
+BenchmarkChineseBuild/1000000
+BenchmarkChineseBuild/1000000-8               46          22038325 ns/op        128000000 B/op         1 allocs/op
+BenchmarkChineseUpdate
+BenchmarkChineseUpdate/2
+BenchmarkChineseUpdate/2-8              34600039                38.46 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseUpdate/17
+BenchmarkChineseUpdate/17-8             21174212                63.01 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseUpdate/15
+BenchmarkChineseUpdate/15-8             21082621                61.59 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseUpdate/10
+BenchmarkChineseUpdate/10-8             22618197                57.29 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseUpdate/1000
+BenchmarkChineseUpdate/1000-8           11261432               108.3 ns/op             0 B/op          0 allocs/op
+BenchmarkChineseUpdate/10000
+BenchmarkChineseUpdate/10000-8           8038100               150.2 ns/op             0 B/op          0 allocs/op
+BenchmarkChineseUpdate/100000
+BenchmarkChineseUpdate/100000-8          5316728               217.3 ns/op             0 B/op          0 allocs/op
+BenchmarkChineseUpdate/1000000
+BenchmarkChineseUpdate/1000000-8         2660095               431.2 ns/op             0 B/op          0 allocs/op
+BenchmarkChineseQuery
+BenchmarkChineseQuery/2-[0-1]
+BenchmarkChineseQuery/2-[0-1]-8         506183878                2.372 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/2-[0-0]
+BenchmarkChineseQuery/2-[0-0]-8         285065139                4.239 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/17-[0-16]
+BenchmarkChineseQuery/17-[0-16]-8       510060409                2.369 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/17-[5-16]
+BenchmarkChineseQuery/17-[5-16]-8       129314304                9.238 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/17-[0-9]
+BenchmarkChineseQuery/17-[0-9]-8        90004503                13.33 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/17-[15-16]
+BenchmarkChineseQuery/17-[15-16]-8      166976665                7.178 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/17-[5-10]
+BenchmarkChineseQuery/17-[5-10]-8       77236021                15.25 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/15-[0-14]
+BenchmarkChineseQuery/15-[0-14]-8       509080098                2.363 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/15-[4-14]
+BenchmarkChineseQuery/15-[4-14]-8       130002358                9.228 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/15-[0-8]
+BenchmarkChineseQuery/15-[0-8]-8        89835764                13.34 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/15-[13-14]
+BenchmarkChineseQuery/15-[13-14]-8      97822758                12.46 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/15-[2-11]
+BenchmarkChineseQuery/15-[2-11]-8       64961868                18.17 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/10-[0-9]
+BenchmarkChineseQuery/10-[0-9]-8        508830954                2.367 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/10-[2-9]
+BenchmarkChineseQuery/10-[2-9]-8        83954004                14.51 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/10-[0-6]
+BenchmarkChineseQuery/10-[0-6]-8        100000000               11.90 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/10-[8-9]
+BenchmarkChineseQuery/10-[8-9]-8        214559356                5.576 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/10-[2-7]
+BenchmarkChineseQuery/10-[2-7]-8        61205752                18.24 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000-[0-999]
+BenchmarkChineseQuery/1000-[0-999]-8    509078296                2.363 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000-[20-999]
+BenchmarkChineseQuery/1000-[20-999]-8   31835340                37.22 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000-[490-520]
+BenchmarkChineseQuery/1000-[490-520]-8          21778418                54.63 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000-[490-495]
+BenchmarkChineseQuery/1000-[490-495]-8          31406761                37.49 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000-[998-999]
+BenchmarkChineseQuery/1000-[998-999]-8          53268031                22.35 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/10000-[0-9999]
+BenchmarkChineseQuery/10000-[0-9999]-8          506233884                2.365 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/10000-[200-9999]
+BenchmarkChineseQuery/10000-[200-9999]-8        21167318                56.48 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/10000-[4900-5200]
+BenchmarkChineseQuery/10000-[4900-5200]-8       18536956                64.33 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/10000-[4900-4950]
+BenchmarkChineseQuery/10000-[4900-4950]-8       20298186                58.54 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/10000-[9998-9999]
+BenchmarkChineseQuery/10000-[9998-9999]-8       51402319                23.20 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/100000-[0-99999]
+BenchmarkChineseQuery/100000-[0-99999]-8        512124364                2.367 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/100000-[200-99999]
+BenchmarkChineseQuery/100000-[200-99999]-8      15131923                78.85 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/100000-[49000-52000]
+BenchmarkChineseQuery/100000-[49000-52000]-8    13452198                88.67 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/100000-[49000-49500]
+BenchmarkChineseQuery/100000-[49000-49500]-8    22013888                54.03 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/100000-[99998-99999]
+BenchmarkChineseQuery/100000-[99998-99999]-8    33207574                36.00 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000000-[0-999999]
+BenchmarkChineseQuery/1000000-[0-999999]-8      511078423                2.363 ns/op           0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000000-[2000-999999]
+BenchmarkChineseQuery/1000000-[2000-999999]-8   13285719                90.24 ns/op            0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000000-[490000-520000]
+BenchmarkChineseQuery/1000000-[490000-520000]-8                  9212620               129.9 ns/op             0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000000-[490000-495000]
+BenchmarkChineseQuery/1000000-[490000-495000]-8                 10978570               109.0 ns/op             0 B/op          0 allocs/op
+BenchmarkChineseQuery/1000000-[999998-999999]
+BenchmarkChineseQuery/1000000-[999998-999999]-8                 18901730                62.09 ns/op            0 B/op          0 allocs/op
+
+BenchmarkIterativeBuild
+BenchmarkIterativeBuild/2
+BenchmarkIterativeBuild/2-8                                     22585453                50.87 ns/op           80 B/op          2 allocs/op
+BenchmarkIterativeBuild/17
+BenchmarkIterativeBuild/17-8                                    10028546               117.1 ns/op           336 B/op          2 allocs/op
+BenchmarkIterativeBuild/15
+BenchmarkIterativeBuild/15-8                                    11100022               107.9 ns/op           288 B/op          2 allocs/op
+BenchmarkIterativeBuild/10
+BenchmarkIterativeBuild/10-8                                    12829747                89.44 ns/op          208 B/op          2 allocs/op
+BenchmarkIterativeBuild/1000
+BenchmarkIterativeBuild/1000-8                                    266824              4205 ns/op           16432 B/op          2 allocs/op
+BenchmarkIterativeBuild/10000
+BenchmarkIterativeBuild/10000-8                                    31018             38211 ns/op          163888 B/op          2 allocs/op
+BenchmarkIterativeBuild/100000
+BenchmarkIterativeBuild/100000-8                                    2662            424892 ns/op         1605684 B/op          2 allocs/op
+BenchmarkIterativeBuild/1000000
+BenchmarkIterativeBuild/1000000-8                                    320           3574803 ns/op        16007220 B/op          2 allocs/op
+BenchmarkIterativeUpdate
+BenchmarkIterativeUpdate/2
+BenchmarkIterativeUpdate/2-8                                    40196964                33.09 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeUpdate/17
+BenchmarkIterativeUpdate/17-8                                   32147520                42.39 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeUpdate/15
+BenchmarkIterativeUpdate/15-8                                   33907045                41.61 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeUpdate/10
+BenchmarkIterativeUpdate/10-8                                   34614884                42.55 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeUpdate/1000
+BenchmarkIterativeUpdate/1000-8                                 24124804                54.49 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeUpdate/10000
+BenchmarkIterativeUpdate/10000-8                                19775560                64.35 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeUpdate/100000
+BenchmarkIterativeUpdate/100000-8                               17195332                73.03 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeUpdate/1000000
+BenchmarkIterativeUpdate/1000000-8                               8526726               129.7 ns/op             0 B/op          0 allocs/op
+BenchmarkIterativeQuery
+BenchmarkIterativeQuery/2-[0-1]
+BenchmarkIterativeQuery/2-[0-1]-8                               490112824                2.449 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/2-[0-0]
+BenchmarkIterativeQuery/2-[0-0]-8                               566956365                2.115 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/17-[0-16]
+BenchmarkIterativeQuery/17-[0-16]-8                             100000000               11.41 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/17-[5-16]
+BenchmarkIterativeQuery/17-[5-16]-8                             145811695                8.231 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/17-[0-9]
+BenchmarkIterativeQuery/17-[0-9]-8                              123738601                9.661 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/17-[15-16]
+BenchmarkIterativeQuery/17-[15-16]-8                            490688752                2.449 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/17-[5-10]
+BenchmarkIterativeQuery/17-[5-10]-8                             248772420                4.821 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/15-[0-14]
+BenchmarkIterativeQuery/15-[0-14]-8                             138269860                8.701 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/15-[4-14]
+BenchmarkIterativeQuery/15-[4-14]-8                             100000000               11.79 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/15-[0-8]
+BenchmarkIterativeQuery/15-[0-8]-8                              219549361                5.465 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/15-[13-14]
+BenchmarkIterativeQuery/15-[13-14]-8                            487820080                2.449 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/15-[2-11]
+BenchmarkIterativeQuery/15-[2-11]-8                             123208550                9.711 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10-[0-9]
+BenchmarkIterativeQuery/10-[0-9]-8                              100000000               10.04 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10-[2-9]
+BenchmarkIterativeQuery/10-[2-9]-8                              146314356                8.199 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10-[0-6]
+BenchmarkIterativeQuery/10-[0-6]-8                              185520283                6.451 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10-[8-9]
+BenchmarkIterativeQuery/10-[8-9]-8                              491588794                2.452 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10-[2-7]
+BenchmarkIterativeQuery/10-[2-7]-8                              207270054                5.801 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000-[0-999]
+BenchmarkIterativeQuery/1000-[0-999]-8                          56282100                21.04 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000-[20-999]
+BenchmarkIterativeQuery/1000-[20-999]-8                         62760961                18.96 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000-[490-520]
+BenchmarkIterativeQuery/1000-[490-520]-8                        100000000               11.72 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000-[490-495]
+BenchmarkIterativeQuery/1000-[490-495]-8                        246292084                4.832 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000-[998-999]
+BenchmarkIterativeQuery/1000-[998-999]-8                        491455498                2.455 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10000-[0-9999]
+BenchmarkIterativeQuery/10000-[0-9999]-8                        41321661                28.87 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10000-[200-9999]
+BenchmarkIterativeQuery/10000-[200-9999]-8                      47075514                25.03 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10000-[4900-5200]
+BenchmarkIterativeQuery/10000-[4900-5200]-8                     60104806                19.78 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10000-[4900-4950]
+BenchmarkIterativeQuery/10000-[4900-4950]-8                     71998377                16.43 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/10000-[9998-9999]
+BenchmarkIterativeQuery/10000-[9998-9999]-8                     491625636                2.454 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/100000-[0-99999]
+BenchmarkIterativeQuery/100000-[0-99999]-8                      33716901                35.23 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/100000-[200-99999]
+BenchmarkIterativeQuery/100000-[200-99999]-8                    33597015                35.26 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/100000-[49000-52000]
+BenchmarkIterativeQuery/100000-[49000-52000]-8                  39819044                29.51 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/100000-[49000-49500]
+BenchmarkIterativeQuery/100000-[49000-49500]-8                  39750124                30.04 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/100000-[99998-99999]
+BenchmarkIterativeQuery/100000-[99998-99999]-8                  490350482                2.460 ns/op           0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000000-[0-999999]
+BenchmarkIterativeQuery/1000000-[0-999999]-8                    28951910                40.88 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000000-[2000-999999]
+BenchmarkIterativeQuery/1000000-[2000-999999]-8                 27143332                43.83 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000000-[490000-520000]
+BenchmarkIterativeQuery/1000000-[490000-520000]-8               36686682                32.36 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000000-[490000-495000]
+BenchmarkIterativeQuery/1000000-[490000-495000]-8               32230627                36.54 ns/op            0 B/op          0 allocs/op
+BenchmarkIterativeQuery/1000000-[999998-999999]
+BenchmarkIterativeQuery/1000000-[999998-999999]-8               490109319                2.454 ns/op           0 B/op          0 allocs/op
+
+BenchmarkRecursiveBuild
+BenchmarkRecursiveBuild/2
+BenchmarkRecursiveBuild/2-8                                     21187359                54.22 ns/op          112 B/op          2 allocs/op
+BenchmarkRecursiveBuild/17
+BenchmarkRecursiveBuild/17-8                                     6219564               191.1 ns/op           624 B/op          2 allocs/op
+BenchmarkRecursiveBuild/15
+BenchmarkRecursiveBuild/15-8                                     6855837               170.5 ns/op           528 B/op          2 allocs/op
+BenchmarkRecursiveBuild/10
+BenchmarkRecursiveBuild/10-8                                     9306813               126.7 ns/op           368 B/op          2 allocs/op
+BenchmarkRecursiveBuild/1000
+BenchmarkRecursiveBuild/1000-8                                    138700              8116 ns/op           32816 B/op          2 allocs/op
+BenchmarkRecursiveBuild/10000
+BenchmarkRecursiveBuild/10000-8                                    15066             78667 ns/op          327731 B/op          2 allocs/op
+BenchmarkRecursiveBuild/100000
+BenchmarkRecursiveBuild/100000-8                                    1455            792689 ns/op         3203137 B/op          2 allocs/op
+BenchmarkRecursiveBuild/1000000
+BenchmarkRecursiveBuild/1000000-8                                    165           7202689 ns/op        32006212 B/op          2 allocs/op
+BenchmarkRecursiveUpdate
+BenchmarkRecursiveUpdate/2
+BenchmarkRecursiveUpdate/2-8                                    38642312                38.03 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveUpdate/17
+BenchmarkRecursiveUpdate/17-8                                   23827705                57.55 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveUpdate/15
+BenchmarkRecursiveUpdate/15-8                                   23551172                56.14 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveUpdate/10
+BenchmarkRecursiveUpdate/10-8                                   24239546                52.48 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveUpdate/1000
+BenchmarkRecursiveUpdate/1000-8                                 13232071                92.89 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveUpdate/10000
+BenchmarkRecursiveUpdate/10000-8                                10518844               116.3 ns/op             0 B/op          0 allocs/op
+BenchmarkRecursiveUpdate/100000
+BenchmarkRecursiveUpdate/100000-8                                8345462               140.7 ns/op             0 B/op          0 allocs/op
+BenchmarkRecursiveUpdate/1000000
+BenchmarkRecursiveUpdate/1000000-8                               4808810               238.4 ns/op             0 B/op          0 allocs/op
+BenchmarkRecursiveQuery
+BenchmarkRecursiveQuery/2-[0-1]
+BenchmarkRecursiveQuery/2-[0-1]-8                               552595690                2.181 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/2-[0-0]
+BenchmarkRecursiveQuery/2-[0-0]-8                               332323170                3.630 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/17-[0-16]
+BenchmarkRecursiveQuery/17-[0-16]-8                             554180151                2.193 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/17-[5-16]
+BenchmarkRecursiveQuery/17-[5-16]-8                             132523284                9.076 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/17-[0-9]
+BenchmarkRecursiveQuery/17-[0-9]-8                              100000000               11.65 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/17-[15-16]
+BenchmarkRecursiveQuery/17-[15-16]-8                            146408462                7.506 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/17-[5-10]
+BenchmarkRecursiveQuery/17-[5-10]-8                             86022528                15.28 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/15-[0-14]
+BenchmarkRecursiveQuery/15-[0-14]-8                             550489333                2.178 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/15-[4-14]
+BenchmarkRecursiveQuery/15-[4-14]-8                             133321599                9.014 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/15-[0-8]
+BenchmarkRecursiveQuery/15-[0-8]-8                              99612961                11.65 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/15-[13-14]
+BenchmarkRecursiveQuery/15-[13-14]-8                            100000000               11.61 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/15-[2-11]
+BenchmarkRecursiveQuery/15-[2-11]-8                             71793950                16.93 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10-[0-9]
+BenchmarkRecursiveQuery/10-[0-9]-8                              552366766                2.187 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10-[2-9]
+BenchmarkRecursiveQuery/10-[2-9]-8                              87719298                13.86 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10-[0-6]
+BenchmarkRecursiveQuery/10-[0-6]-8                              100000000               10.13 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10-[8-9]
+BenchmarkRecursiveQuery/10-[8-9]-8                              244968450                4.905 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10-[2-7]
+BenchmarkRecursiveQuery/10-[2-7]-8                              72565284                17.07 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000-[0-999]
+BenchmarkRecursiveQuery/1000-[0-999]-8                          549678638                2.198 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000-[20-999]
+BenchmarkRecursiveQuery/1000-[20-999]-8                         34844385                34.59 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000-[490-520]
+BenchmarkRecursiveQuery/1000-[490-520]-8                        23018822                51.88 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000-[490-495]
+BenchmarkRecursiveQuery/1000-[490-495]-8                        33294796                35.70 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000-[998-999]
+BenchmarkRecursiveQuery/1000-[998-999]-8                        53712603                21.49 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10000-[0-9999]
+BenchmarkRecursiveQuery/10000-[0-9999]-8                        551333978                2.202 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10000-[200-9999]
+BenchmarkRecursiveQuery/10000-[200-9999]-8                      22983240                52.04 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10000-[4900-5200]
+BenchmarkRecursiveQuery/10000-[4900-5200]-8                     19592662                60.87 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10000-[4900-4950]
+BenchmarkRecursiveQuery/10000-[4900-4950]-8                     21331120                55.84 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/10000-[9998-9999]
+BenchmarkRecursiveQuery/10000-[9998-9999]-8                     54357160                21.86 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/100000-[0-99999]
+BenchmarkRecursiveQuery/100000-[0-99999]-8                      538445978                2.203 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/100000-[200-99999]
+BenchmarkRecursiveQuery/100000-[200-99999]-8                    17851995                68.08 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/100000-[49000-52000]
+BenchmarkRecursiveQuery/100000-[49000-52000]-8                  14958489                80.18 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/100000-[49000-49500]
+BenchmarkRecursiveQuery/100000-[49000-49500]-8                  23727782                50.20 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/100000-[99998-99999]
+BenchmarkRecursiveQuery/100000-[99998-99999]-8                  36340005                32.77 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000000-[0-999999]
+BenchmarkRecursiveQuery/1000000-[0-999999]-8                    548647820                2.199 ns/op           0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000000-[2000-999999]
+BenchmarkRecursiveQuery/1000000-[2000-999999]-8                 14843745                81.24 ns/op            0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000000-[490000-520000]
+BenchmarkRecursiveQuery/1000000-[490000-520000]-8                9557024               121.0 ns/op             0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000000-[490000-495000]
+BenchmarkRecursiveQuery/1000000-[490000-495000]-8               11735601               102.6 ns/op             0 B/op          0 allocs/op
+BenchmarkRecursiveQuery/1000000-[999998-999999]
+BenchmarkRecursiveQuery/1000000-[999998-999999]-8               31424066                37.82 ns/op            0 B/op          0 allocs/op
+
+PASS
+ok      github.com/cjcjcj/algo/go/algo/segmenttree      224.322s
