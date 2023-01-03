@@ -2,51 +2,41 @@
     https://codeforces.com/blog/entry/18051
     https://brestprog.by/topics/segmenttree/
     https://e-maxx.ru/algo/segment_tree
+
+
+    S: O(2n)
+    T:
+        init O(n)
+        q    O(logn)
+        add  O(logn)
 """
-
-
-# import operator
-# ops = (
-#     min,
-#     max,
-#     operator.add,
-# )
 
 
 class ST:
     __slots__ = 'op', 'tree', 'n'
-    def __init__(self, nums: list[int], op):
-        self.op = op
-
+    def __init__(self, nums: list[int]):
         self.n = len(nums)
         self.tree = nums * 2
         for i in reversed(range(self.n)):
-            self.tree[i] = op(self.tree[i<<1], self.tree[i<<1 | 1])
+            self.tree[i] = self.tree[2*i] + self.tree[2*i + 1]
 
     def query(self, l: int, r: int) -> int:
-        op = self.op
-
+        l, r = l+self.n, r+self.n
         res = 0
-        l += self.n
-        r += self.n
-        while l < r:
-            if l & 1:
-                res = op(res, self.tree[l])
+        while l <= r:
+            if l%2 == 1:
+                res += self.tree[l]
                 l += 1
-            if not (r & 1):
-                res = op(res, self.tree[r])
+            if r%2 == 0:
+                res += self.tree[r]
                 r -= 1
-            l >>= 1
-            r >>= 1
+            l, r = l//2, r//2
         return res
 
-    def update(self, idx: int, value: int):
-        # idx = 2*i     ->  idx^1 = 2*i + 1
-        # idx = 2*i + 1 ->  idx^1 = 2*i
-        op = self.op
-
-        idx += self.n
-        self.tree[idx] = value
-        while idx > 1:
-            self.tree[idx >> 1] = op(self.tree[idx], self.tree[idx^1])
-            idx >>= 1
+    def update(self, k: int, value: int):
+        k += self.n
+        self.tree[k] = value
+        k //= 2
+        while k >= 1:
+            self.tree[k] = self.tree[2*k] + self.tree[2*k+1]
+            k //= 2
