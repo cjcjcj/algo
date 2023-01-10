@@ -3,7 +3,10 @@
     Query: O(logn)
     Set: O(logn)
     Add: O(logn)
+
+    https://neerc.ifmo.ru/wiki/index.php?title=Дерево_Фенвика
 """
+
 
 class Fenwick:
     def __init__(self, vals):
