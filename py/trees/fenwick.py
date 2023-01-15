@@ -1,4 +1,6 @@
 """
+    0 - indexed
+
     Init: O(nlogn)
     Query: O(logn)
     Set: O(logn)
@@ -13,17 +15,13 @@ class Fenwick:
         n = len(vals)
         self.tree = [0]*n
         for i in range(n):
-            j = i
-            while j < n:
-                self.tree[j] += vals[i]
-                j |= j+1
+            self.add(i, vals[i])
 
     def _q(self, l):
         s = 0
         while l >= 0:
             s += self.tree[l]
-            l &= l+1
-            l -= 1
+            l = l & (l+1) - 1
         return s
 
     def query(self, l, r):
@@ -33,7 +31,7 @@ class Fenwick:
     def add(self, i, v):
         while i < len(self.tree):
             self.tree[i] += v
-            i |= i+1
+            i = i | (i+1)
 
     def get(self, i):
         return self.query(i, i)
