@@ -1,5 +1,5 @@
 """
-    0 - indexed
+    1 - indexed
 
     Init: O(nlogn)
     Query: O(logn)
@@ -7,34 +7,37 @@
     Add: O(logn)
 
     https://neerc.ifmo.ru/wiki/index.php?title=Дерево_Фенвика
+    https://cp-algorithms.com/data_structures/fenwick.html
 """
 
 
 class Fenwick:
     def __init__(self, vals):
-        n = len(vals)
-        self.tree = [0]*n
-        for i in range(n):
-            self.add(i, vals[i])
-
+        self.n = len(vals)+1
+        self.tree = [0]*self.n
+        for i, v in enumerate(vals):
+            self.add(i, v)
     def _q(self, l):
         s = 0
-        while l >= 0:
+        l += 1
+        while l > 0:
             s += self.tree[l]
-            l = l & (l+1) - 1
+            l -= l & (-l)
         return s
-
     def query(self, l, r):
         """[l, r]"""
         return self._q(r) - self._q(l-1)
-
     def add(self, i, v):
-        while i < len(self.tree):
+        i += 1
+        while i < self.n:
             self.tree[i] += v
-            i = i | (i+1)
-
+            i += i & (-i)
     def get(self, i):
-        return self.query(i, i)
-
+        s = 0
+        i += 1
+        while i > 0:
+            s += self.tree[i]
+            i -= i & (-i)
+        return s
     def set(self, i, v):
         self.add(i, v - self.get(i))
